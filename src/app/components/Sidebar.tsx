@@ -25,10 +25,12 @@ export default function Sidebar() {
     <aside className={styles.sidebar}>
       <div className={styles.profile}>
         <div className={styles.avatar}>
-          <span>👤</span>
+          <Link href="/profile" style={{ display: 'inline-block', width: '100%', height: '100%' }}>
+            <span style={{ cursor: 'pointer' }}>👤</span>
+          </Link>
         </div>
         <div className={styles.userInfo}>
-          <span className={styles.userName}>Sarah Smith</span>
+          <span className={styles.userName}>LISTIA ROSA</span>
           <span className={styles.role}>ADMIN</span>
         </div>
       </div>
